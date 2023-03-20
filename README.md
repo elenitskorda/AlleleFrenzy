@@ -152,6 +152,7 @@ shinyApp(ui, server)
 >The plot need to be like the pictuce below:
 
 ![image](https://user-images.githubusercontent.com/32453911/226433913-d9cca898-dca2-4694-9920-f58d47c92f99.png)
+>Figure 1: Demonstration of Allele Frenzy application tool. On the left side of the window, the user adjusts the input parameters, and the plot are adjust-ed accordingly to the right side with the generation change on the y axis and the minor allele frequency on the x axis.
 
 ## Limitations and Future Work
 
