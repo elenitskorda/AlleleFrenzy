@@ -128,7 +128,7 @@ server <- function(input, output) {
     af_df <- do.call(rbind, af_list)
 
 ```
->Once the simulation is complete, the data frames are combined and plotted using ggplot2.  The output$minor_af_plot object is generated using renderPlot() function. The renderPlot() function takes a plot generation function (in this case, ggplot()) as its argument and generates a plot based on the output of that function. Specifically, the renderPlot() function is used to generate a plot of minor allele frequency changes over time, using the ggplot2 package which creates the plot. The plot is created based on a data frame called ''af_df'' . This data frame contains information on theMAF for each SNP over generations. This can be described by this part:
+>Once the simulation is complete, the data frames are combined and plotted using ggplot2.  The output$minor_af_plot object is generated using renderPlot() function. The renderPlot() function takes a plot generation function (in this case, ggplot()) as its argument and generates a plot based on the output of that function. Specifically, the renderPlot() function is used to generate a plot of minor allele frequency changes over time, using the ggplot2 package which creates the plot. The plot is created based on a data frame called ''af_df'' .This data frame contains information on theMAF for each SNP over generations. This can be described by this part:
 
 ```r
 # Plot minor allele frequency changes over time
@@ -149,6 +149,10 @@ server <- function(input, output) {
 
 shinyApp(ui, server)
 ```
+>The plot need to be like the pictuce below:
+
+![image](https://user-images.githubusercontent.com/32453911/226433913-d9cca898-dca2-4694-9920-f58d47c92f99.png)
+
 ## Limitations and Future Work
 
 >There are some limitations to the current version of the Allele Frenzy app which are documented below:
